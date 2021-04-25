@@ -1,19 +1,50 @@
-.container{
+
+body h2{
+
     display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 2em;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    color: white;
+    text-shadow: 2px 2px black;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+
+
 }
 
-.StartMenu{
-    font-size: large;
-    color: white;
+h2:hover{
+    transform: scale(1.2);
+}
+
+@keyframes TitleAnimation{
+
+    0%{font-weight: lighter}
+    25%{color: brown;}
+    50%{transform: scale(.9)}
+    100%{color: black;}
+}
+
+
+body h1{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
-    position: relative;
+    align-self: center;
+    margin-top: 100px;
+    text-shadow: 2px 2px brown;
+    font-family:'Almarai', sans-serif;
+    font-size: 6em;
+    font-weight: bold;
+    z-index: 1;
+    transition: all 5s ease-in-out;
+    animation:  TitleAnimation 5s ease-in-out 2s infinite alternate;
+    
 }
-h1{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 3em;
-    border-bottom: 2px solid pink;
-}
+
 
 #LandingVideo{
 
@@ -22,9 +53,7 @@ h1{
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -1;
     
 }
 
-.container h1{
-    font-size: 100px;
-}
