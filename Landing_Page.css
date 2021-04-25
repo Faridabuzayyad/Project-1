@@ -1,23 +1,33 @@
 
-body h2{
+body { 
+    opacity: 0;
+    transition: opacity .5s;
+ }
+
+body span{
 
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-top: 20px;
-    font-size: 2em;
+    justify-content: center;
+    flex-flow: row wrap-reverse;
+    align-content: center;
+    margin-top: 30px;
+    font-size: 2.5em;
     font-family:Georgia, 'Times New Roman', Times, serif ;
     color: white;
     text-shadow: 2px 2px black;
-    cursor: pointer;
+    text-decoration: none;
+    /*cursor: pointer;*/
     z-index: 1;
     transition: all 1s ease-in-out;
+    cursor: pointer;
+    ;
 
 
 }
 
-h2:hover{
-    transform: scale(1.2);
+span:hover{
+    transform: scale(1.1);
+    color: black;
 }
 
 @keyframes TitleAnimation{
@@ -34,13 +44,13 @@ body h1{
     flex-wrap: wrap;
     justify-content: center;
     align-self: center;
-    margin-top: 100px;
+    margin-top: 75px;
     text-shadow: 2px 2px brown;
     font-family:'Almarai', sans-serif;
     font-size: 6em;
     font-weight: bold;
     z-index: 1;
-    transition: all 5s ease-in-out;
+    transition: all 7s ease-in-out;
     animation:  TitleAnimation 5s ease-in-out 2s infinite alternate;
     
 }
