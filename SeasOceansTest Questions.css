@@ -88,4 +88,9 @@ img{
   position: absolute;
   font-size: 1.5em;
   top: 35px;
+  transition: all 1s;
+}
+
+h2:hover{
+  transform: scale(1.3);
 }

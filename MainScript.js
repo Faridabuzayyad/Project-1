@@ -12,26 +12,25 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.querySelector('body').style.opacity = 1
 })
 
+
+
 let Result = 0 ;
-
-
-
-const Q1Answers = ["Fa" , "Fa" , "Ta" , "Fa"]
-
-
 
 function AnswerCheckerQ1(){
 
     let ChAnswer = event.target ;
-        if(ChAnswer["id"] === "Ta"){
+    console.log(ChAnswer.id);
+        if(ChAnswer.id === "Ta"){
             document.getElementById("Ta").style.backgroundColor = "green";
             Result = Result + 10
             transitionToPage('SeasQ2.html');
         }
 
         else{
-            return Result
+            transitionToPage('SeasQ2.html');
 
         }
     
 }
+
+
