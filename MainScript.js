@@ -12,17 +12,26 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.querySelector('body').style.opacity = 1
 })
 
+let Result = 0 ;
 
 
-const SeaAnswers = ["a0" , "a1" , "at" , "a3"]
+
+const Q1Answers = ["Fa" , "Fa" , "Ta" , "Fa"]
 
 
-function AnswerChecker(){
-    let x = event.target ;
-    console.log(x.id);
-    for(i = 0 ; i < SeaAnswers.length ; i++){
-        if(x.id === "at"){
-            document.getElementById("at").style.backgroundColor = "green"
+
+function AnswerCheckerQ1(){
+
+    let ChAnswer = event.target ;
+        if(ChAnswer["id"] === "Ta"){
+            document.getElementById("Ta").style.backgroundColor = "green";
+            Result = Result + 10
+            transitionToPage('SeasQ2.html');
         }
-    }
+
+        else{
+            return Result
+
+        }
+    
 }

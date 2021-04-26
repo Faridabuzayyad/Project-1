@@ -1,0 +1,91 @@
+
+.video__wrap {
+    width: 100%;
+  }
+
+  #mo{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 140px;
+    width: 676px;
+    position: absolute;
+    top: 375px;
+    z-index: 10;
+    left : 350px;
+    font-family:'Almarai', sans-serif;
+
+  }
+
+
+
+
+  .video__overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    
+    opacity: 0.95;
+    background:center center no-repeat;
+    background-size: contain;
+    background-image: url(./QuizTemplate.gif);
+    
+    
+    
+  }
+  .video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background:center center no-repeat; 
+    background-size: cover;
+  }
+  
+  
+  #interActiveSection{
+    font-family:'Almarai', sans-serif;
+
+  }  
+  
+  
+
+img{
+    border: black solid 2px;
+    margin-top: 40px;
+    margin-left: 500px;
+    font-size: 2em;
+    box-shadow: goldenrod;
+}
+  
+
+#interActiveSection #Question{
+
+    direction: rtl;
+    margin-right: 350px ;
+    margin-top: 25px;
+    font-size: 2em;
+}
+
+.Answers{
+  display: flex;
+  justify-content: space-around;
+  width: 143px;
+  height: 137px;
+  z-index: 20;
+
+}
+
+.Choices{
+  
+  direction: rtl;
+  position: absolute;
+  font-size: 1.5em;
+  top: 35px;
+}
